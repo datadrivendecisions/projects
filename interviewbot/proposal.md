@@ -1,84 +1,72 @@
-# Project Proposal 2: Real-Time Interview Assistant for ARBO Compliance Reporting and Long-Term Analysis
+# Project Proposal: AI-Powered Process Flow Diagram Generator
 
 ## Project Overview
-This project proposes the development of an AI-powered real-time interview assistant using Machine Learning, Retrieval-Augmented Generation (RAG), and Agentic AI to ensure ARBO (Dutch Occupational Health and Safety Act) compliance during employee interviews. The system will provide live guidance during interviews, assist in generating compliance reports, and support long-term trend analysis to enhance workplace safety and health management.
 
-### Objectives
-- Develop an AI-driven real-time assistant that provides live feedback and suggestions during interviews, leveraging RAG for enhanced context.
-- Automate the generation of ARBO-compliant reports.
-- Implement a long-term analysis tool to identify trends and suggest improvements in workplace safety, using Agentic AI to continuously refine insights.
+### Project Name:
+AI-Powered Process Flow Diagram Generator
 
-### Scope
+### Objective:
+The objective of this project is to develop an AI system capable of automatically generating process flow diagrams based on unstructured data sources, such as emails, manuals, and ERP logs. The system will utilize large language models (LLMs), Retrieval-Augmented Generation (RAG), and Agentic AI to create accurate and insightful visualizations of business processes.
 
-#### 1. Data Collection & Preprocessing
-- **Data Sources**: Collect historical interview data, ARBO compliance records, and safety-related documentation.
-- **Agentic AI for Data Preprocessing**: Automate text cleaning, annotation, and preprocessing using autonomous agents for better accuracy and efficiency.
-- **RAG Integration**: Utilize RAG to integrate external compliance knowledge and contextual ARBO regulations, enabling the system to stay up-to-date.
+### Key Deliverables:
+1. **LLM Integration**: Leverage large language models (e.g., GPT) to extract relevant information from unstructured data and understand underlying business processes.
+2. **RAG Integration**: Enhance the model's capabilities by integrating external knowledge sources to improve accuracy.
+3. **Agentic AI**: Use autonomous agents to assist in data preprocessing and refinement of the process flow diagrams.
+4. **Diagram Generation Engine**: Translate the extracted information into clear process flow diagrams using automated diagram generation tools.
+5. **Basic User Interface**: A simple interface allowing users to upload documents, view the generated diagrams, and make adjustments as needed.
 
-#### 2. Model Development
-- **NLP and Machine Learning**: Develop an NLP-based model that can analyze interview content in real-time, detecting ARBO-related compliance concerns.
-- **Real-Time Suggestion System**: Implement a live feedback system, prompting interviewers with compliance-related questions or concerns based on RAG-enhanced knowledge retrieval.
-- **Reporting Engine**: Automate the generation of ARBO-compliant reports immediately after interviews, incorporating Agentic AI to improve report accuracy over time.
+## Background and Motivation
 
-#### 3. System Integration
-- **Integration with HR & Compliance Systems**: Seamlessly integrate the AI assistant with existing HR systems and compliance software to simplify data flow and report generation.
-- **User Interface**: Develop a user-friendly interface for interviewers, allowing them to interact with the assistant, receive real-time guidance, and review compliance reports.
+### Problem Statement:
+Organizations deal with vast amounts of unstructured data in the form of emails, manuals, and logs, which often contain valuable information about business processes. Manually extracting and visualizing this information is time-consuming and prone to errors. By utilizing large language models, RAG, and Agentic AI, we can automate this task and improve efficiency and accuracy in process documentation.
 
-#### 4. Long-Term Trend Analysis
-- **Data-Driven Insights**: Implement a trend analysis tool that continuously monitors interview data and identifies patterns related to workplace safety and health compliance.
-- **Agentic AI for Analysis**: Deploy autonomous agents to track patterns and refine safety insights, suggesting improvements and proactively identifying potential compliance issues.
+### Proposed Solution:
+We propose to develop an AI-powered system that uses large language models (LLMs) to extract process-related information from unstructured data. The system will automatically generate process flow diagrams that can be reviewed and adjusted by users.
 
-#### 5. Testing & Validation
-- **Pilot Testing**: Conduct live pilot tests during interviews to assess the performance of the real-time assistant.
-- **Validation**: Ensure the accuracy of the generated ARBO-compliant reports and the relevance of the assistant's real-time suggestions through compliance expert validation.
+## Technical Approach
+
+### 1. Data Collection and Preprocessing
+- **Data Sources**: Gather unstructured data such as emails, manuals, and ERP logs.
+- **Data Preprocessing**: Use Agentic AI to automate tasks like cleaning, structuring, and preparing the data for use by the LLMs.
+
+### 2. Retrieval-Augmented Generation (RAG)
+- **Knowledge Integration**: Integrate external knowledge sources with the LLM to enhance the model's ability to understand and extract relevant process information.
+  
+### 3. Diagram Generation
+- **Flowchart Logic**: Define rules and algorithms to automatically translate the extracted process information into visual process flow diagrams.
+- **Diagram Rendering**: Use tools such as Graphviz or Mermaid to generate the diagrams from the data.
 
 ## Project Timeline and Budget
 
-### Phase 1: Data Collection, Preprocessing, and Initial Model Development (Month 1-2)
-- **Hours Estimate**: 120 hours
-  - Collect and preprocess historical interview and compliance data using Agentic AI for annotation and cleaning.
-  - Begin developing the core NLP model for real-time content analysis.
+### Phase 1: Research and Data Collection (Weeks 1-2)
+- **Hours Estimate**: 40 hours
+  - Collect and preprocess unstructured data (e.g., emails, manuals, ERP logs).
+  - Set up Agentic AI to assist with data cleaning and structuring.
 
-### Phase 2: Real-Time Assistant Development and System Integration (Month 3-4)
-- **Hours Estimate**: 160 hours
-  - Implement RAG to enhance the AI's understanding of ARBO compliance.
-  - Develop the real-time suggestion engine and integrate it with HR and compliance systems.
-  - Build the user interface for real-time interaction during interviews.
-
-### Phase 3: Long-Term Trend Analysis and Model Refinement (Month 5-6)
-- **Hours Estimate**: 120 hours
-  - Develop the long-term analysis tool to track safety trends using interview data.
-  - Refine the model based on pilot feedback and ensure the analysis tool is effective in identifying actionable insights.
-
-### Phase 4: Testing, Validation, and Deployment (Month 7)
+### Phase 2: LLM and RAG Integration (Weeks 3-5)
 - **Hours Estimate**: 80 hours
-  - Test the system in real-world interview scenarios.
-  - Validate report generation accuracy and the effectiveness of the real-time assistant through compliance expert review.
-  - Deploy the final system and provide training to HR teams.
+  - Integrate LLMs to extract process information from the unstructured data.
+  - Implement RAG to enhance the model's accuracy with external knowledge sources.
 
-### **Total Estimated Hours**: 480 hours
+### Phase 3: Diagram Generation Engine (Weeks 6-10)
+- **Hours Estimate**: 100 hours
+  - Develop the logic for converting extracted information into process flow diagrams.
+  - Implement tools for rendering diagrams using libraries like Graphviz or PlantUML.
 
-## Resources Needed
-- **Data Scientists**: For NLP model development, RAG integration, and long-term trend analysis (200 hours).
-- **Software Engineers**: For real-time system development, user interface creation, and integration with HR systems (180 hours).
-- **Compliance Experts**: To annotate data and validate the system's ARBO compliance performance (60 hours).
-- **HR Professionals**: To provide feedback and test the real-time assistant in live scenarios (40 hours).
+### **Total Estimated Hours**: 220 hours
 
 ## Risks and Mitigation Strategies
 
-| **Risk**                                 | **Mitigation Strategy**                          |
-|------------------------------------------|--------------------------------------------------|
-| **Incomplete or biased training data**    | Collaborate with ARBO experts to annotate and validate training data for compliance coverage. |
-| **Accuracy of real-time suggestions**     | Continuously refine the NLP model and RAG system based on pilot testing and feedback from users. |
-| **Integration challenges with HR systems**| Start integration planning early, and engage with HR teams and software vendors to ensure compatibility. |
-| **User adoption and interface usability** | Conduct thorough usability testing with HR teams to ensure that the system is intuitive and meets user expectations. |
-| **Long-term trend analysis reliability**  | Utilize Agentic AI to continually monitor and refine trend analysis, incorporating new data to improve system accuracy. |
+| **Risk**                                 | **Mitigation Strategy**                         |
+|------------------------------------------|-------------------------------------------------|
+| Inaccurate extraction of process flows   | Continuously improve the LLM through iterative feedback and testing. |
+| Complexity in diagram generation         | Use modular logic to simplify the diagram generation process. |
+| User adoption and usability              | Build a basic yet functional user interface for easy interaction with the system. |
 
-## Expected Outcomes
-- **Real-Time Interview Assistant**: An AI assistant that ensures ARBO compliance during interviews by providing live feedback and suggestions.
-- **Automated Reporting**: A reporting engine that generates accurate, ARBO-compliant reports in real-time, reducing manual work and errors.
-- **Long-Term Analysis**: A trend analysis tool that identifies patterns in interview data, offering actionable insights and proactive recommendations for improving workplace safety and health.
+## Conclusion
+
+The AI-Powered Process Flow Diagram Generator will automate the extraction of process flows from unstructured data sources, helping organizations visualize and document their business processes more efficiently. By leveraging LLMs, RAG, and Agentic AI, this project will provide students with hands-on experience in cutting-edge AI technologies while delivering valuable insights to organizations.
 
 ---
 
-*Prepared by [Your Name], [Date]*
+*Prepared by Witek ten Hove, 04-09-2024*
